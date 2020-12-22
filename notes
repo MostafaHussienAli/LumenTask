@@ -1,0 +1,4 @@
+composer create-project --prefer-dist laravel/lumen lumenpro
+php -S localhost:8000 -t public
+composer require flipbox/lumen-generator
+put $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class); in bootstrap/app.php
